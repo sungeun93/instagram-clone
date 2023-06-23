@@ -1,0 +1,23 @@
+필요한 패키지 목록
+
+compression - 대용량 데이터를 위한 압축기능을 제공
+cors(Cross-Origin Resource Sharing) - 교차출처 리소스 공유(CORS) 기능을 제공(서버간 요청을 가능하게 함)
+dotenv - 환경변수(enviroment variables)를 사용할 수 있는 환경을 제공
+express-validator - 입력데이터 유효성(validation) 검사 기능을 제공(클라이언트가 서버에 요청할때-회원가입, 로그인등)
+helmet - 요청 헤더를 보호하는 기능을 제공
+http-errors - 404에러를 처리한다
+jsonwebtoken - JWT(Json Web Token) 생성 및 관리
+luxon - 날짜 데이터 가공기능 제공
+mongoose - 데이터 베이스 연결 및 객체 매핑 기능(ODM)을 제공
+morgan - 클라이언트와 서버의 통신 기록을 출력하고 저장하는 기능 제공
+multer - 파일 처리 기능 제공
+passport - 인증 처리 라이브러리
+passport-jwt - jwt처리용 passport 패키지
+
+
+npm install ...
+(띄어쓰기로 한번에 설치)
+
+
+
+

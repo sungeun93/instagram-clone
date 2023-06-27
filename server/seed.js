@@ -25,27 +25,27 @@ async function seedDatabase() {
         // 생성할 유저 리스트
         const users = [
             {
-                username: 'cat',
-                email: 'cat@example.com',
-                fullName: 'Kitty',
-                avatar: 'cat.jpeg',
-                bio: 'Meow',
+              username: 'cat',
+              email: 'cat@example.com',
+              fullName: 'Kitty',
+              avatar: 'cat.jpeg',
+              bio: 'Meow',
             },
             {
-                username: 'dog',
-                email: 'dog@example.com',
-                fullName: 'Mr.Loyal',
-                avatar: 'dog.jpeg',
-                bio: 'Bark',
+              username: 'dog',
+              email: 'dot@example.com',
+              fullName: 'Mr.Loyal',
+              avatar: 'dog.jpeg',
+              bio: 'Bark',
             },
             {
-                username: 'bird',
-                email: 'bird@example.com',
-                fullName: 'Blue and White',
-                avatar: 'bird.jpeg',
-                bio: '',
+              username: 'bird',
+              email: 'bird@example.com',
+              fullName: 'Blue and White',
+              avatar: 'bird.jpeg',
+              bio: '',
             }
-        ]
+          ]
 
         // 유저 도큐먼트를 생성한다(실제 유저 생성부분)
         for (let i = 0; i < users.length; i++) {

@@ -179,10 +179,7 @@ export default function Accounts() {
                       취소
                     </Link>
                 </div>
-
-
             </form>
-
         </div>
     )
 };

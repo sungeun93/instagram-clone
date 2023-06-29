@@ -59,10 +59,32 @@ export default function Profile() {
     };
 
     // 팔로우 처리
-    async function handleFollow() {};
+    async function handleFollow() {
+      try {
+        // 서버 요청
+        await follow(username)
+
+        // profiles 업데이트
+        setProfile({...profile, isFollowing: true})
+
+      } catch (error) {
+        alert(error)
+      }
+    };
 
     // 언팔로우 처리
-    async function handleUnfollow() {};
+    async function handleUnfollow() {
+      try {
+        // 서버 요청
+        await unfollow(username)
+
+        // profile 업데이트
+        setProfile({...profile, isFollowing: false});
+
+      } catch (error) {
+        alert(error)
+      }
+    };
 
     // 타이틀 업데이트
     useEffect(() => {

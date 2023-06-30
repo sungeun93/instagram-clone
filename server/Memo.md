@@ -34,7 +34,7 @@ token: 클라이언트에서 인증 정보를 보관하는 방법
 
 
 
-디폴로이
+# 디폴로이
 
 1. 데이터베이스 - MongoDB Atlas(몽고DB클라우드)
 2. API 서버 - Railway, AWS 등

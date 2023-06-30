@@ -24,13 +24,53 @@ export default function ArticleView() {
     }, [])
 
     // 좋아요 처리
-    async function handleFavorite(id) {};
+    async function handleFavorite(id) {
+        try {
+            await  favorite(id)
+
+            const updatedArticle = {
+                ...article,
+                isFavorite: true,
+                favoriteCount: article.favoriteCount + 1
+            }
+
+            setArticle(updatedArticle);
+
+        } catch (error) {
+            alert(error)
+        }
+    };
 
     // 좋아요 취소 처리
-    async function handleUnfavorite(id) {};
+    async function handleUnfavorite(id) {
+        try {
+
+            await unfavorite(id);
+
+            const updatedArticle = {
+                ...article,
+                isFavorite: false,
+                favoriteCount: article.favoriteCount - 1
+            }
+
+            setArticle(updatedArticle);
+
+        } catch (error) {
+            alert(error)
+        }
+    };
 
     // 게시물 삭제 처리
-    async function handleDelete(id) {};
+    async function handleDelete(id) {
+        try {
+            await deleteArticle(id);
+
+            navigate('/', {replace: true});
+
+        } catch (error) {
+            alert(error)
+        }
+    };
 
     if (!article) {
         return <Spinner />
